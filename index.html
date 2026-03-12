@@ -7,13 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="img/image.png">
 </head>
-  <body>
+
+
+  <body class="bg-dark" >
 
     <!-- Navbar -->
 
     <div class="container-fluid">
       <div class="row">
-         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
       <img src="img/image.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top " >
@@ -21,7 +23,7 @@
     </a>
       <form class="d-flex w-75" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success text-light" type="submit">Search</button>
       </form>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,22 +35,26 @@
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+           Category
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Fashion</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+             <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
+        
       </ul>
 
     </div>
@@ -58,10 +64,112 @@
     </div>
 
     <!-- carsauel banner -->
+     <div class="container ">
+        <div class="row">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="img/offer-1.webp" class="d-block w-100" alt="..." width="100px" height="300px">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/offer-2.png" class="d-block w-100" alt="..." width="100px" height="300px">
+    </div>
+    <div class="carousel-item " data-bs-interval="2000">
+      <img src="img/offerr-3.PNG" class="d-block w-100" alt="..." width="100px" height="300px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>              
+
+        </div>
+      
+     </div>
 
     <!-- cards -->
 
+    <div class="container-fluid mt-3">
+      <div class="row gap-2 justify-content-around">
+      <div class="card" style="width: 18rem;">
+  <img src="phone.jpeg" class="card-img-top" alt="..." width="100px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Motorola G15</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="phone2.jpeg" class="card-img-top" alt="..." width="100px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Google Pixel 4</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="laptop.png" class="card-img-top" alt="..." width="100px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Asus TUF</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="laptop2.png" class="card-img-top" alt="..." width="100px" height="200px">
+  <div class="card-body">
+    <h5 class="card-title">Samsung Galaxy Book 4</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
+  </div>
+</div>
+
+
+
+                    
+
+      </div>
+    </div>
+
+
+
+    
+
     <!-- offers -->
+
+    <div class="container-fluid mt-2">
+        <div class="row">
+          <div class="col-6">
+            <img src="img/offer-1.png" alt="" width="650px">
+          </div>
+
+
+          <div class="col-6">
+            <img src="img/offerr-3.PNG" alt="" width="650px">
+          </div>
+        </div>
+
+        <div class="col-6">
+            <img src="mixer.png" alt="" width="650px">
+          </div>
+        </div>
+
+         <div class="col-6">
+            <img src="refrighrator.png" alt="" width="650px">
+          </div>
+        </div>
+
+
+        
+    </div>
 
     <!-- footer -->
 
