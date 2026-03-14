@@ -3,209 +3,188 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flipkart|home</title>
+    <title>Flipkart | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="img/image.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
-
-
-  <body class="bg-dark" >
+    <style>
+      /* Custom style for footer links on dark background */
+      .footer-links a {
+        color: #f8f9fa;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        text-decoration: underline;
+        color: #ffc107;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
 
     <!-- Navbar -->
-
     <div class="container-fluid">
       <div class="row">
-         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-      <img src="img/image.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top " >
-      Flipkart
-    </a>
-      <form class="d-flex w-75" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success text-light" type="submit">Search</button>
-      </form>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
-        </li>
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Category
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Fashion</a></li>
-            <li><a class="dropdown-item" href="#">Electronics</a></li>
-             <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/image.png" alt="Flipkart Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Flipkart
+            </a>
+            <!-- Search form - hidden on small screens inside toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex ms-auto w-75" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
 
-    <!-- carsauel banner -->
-     <div class="container m-0 p-0">
-        <div class="row">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="2000">
-      <img src="img/offer-1.webp" class="d-block w-100" alt="..." width="100px" height="300px">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="img/offer-2.png" class="d-block w-100" alt="..." width="100px" height="300px">
-    </div>
-    <div class="carousel-item " data-bs-interval="2000">
-      <img src="img/offerr-3.PNG" class="d-block w-100" alt="..." width="100px" height="300px">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>              
-
+    <!-- Carousel banner -->
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/offer-1.webp" class="d-block w-100" alt="Special offer on electronics" style="height:300px; object-fit:cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/offer-2.png" class="d-block w-100" alt="Festival sale banner" style="height:300px; object-fit:cover;">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/offer-2.png" class="d-block w-100" alt="Clearance sale" style="height:300px; object-fit:cover;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      
-     </div>
+      </div>
+    </div>
 
-    <!-- cards -->
-
+    <!-- Cards -->
     <div class="container-fluid mt-3">
       <div class="row gap-2 justify-content-around">
-      <div class="card" style="width: 18rem;">
-  <img src="phone.jpeg" class="card-img-top" alt="..." width="100px" height="200px">
-  <div class="card-body">
-    <h5 class="card-title">Motorola G15</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
-  </div>
+        <div class="card" style="width: 18rem;">
+          <img src="phone.jpeg" class="card-img-top" alt="Motorola G15 smartphone" style="height:200px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Motorola G15</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          <div class="d-flex justify-content-center align-items-center" style="height: 40px; bg-primary">
+  <button class="btn btn-primary  width-100">BUY</button>
 </div>
-
-<div class="card" style="width: 18rem;">
-  <img src="phone2.jpeg" class="card-img-top" alt="..." width="100px" height="200px">
-  <div class="card-body">
-    <h5 class="card-title">Google Pixel 4</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="laptop.png" class="card-img-top" alt="..." width="100px" height="200px">
-  <div class="card-body">
-    <h5 class="card-title">Asus TUF</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="laptop2.png" class="card-img-top" alt="..." width="100px" height="200px">
-  <div class="card-body">
-    <h5 class="card-title">Samsung Galaxy Book 4</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary d-flex justify-content-center ">BUY</a>
-  </div>
-</div>
-
-
-
-                    
-
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="phone2.jpeg" class="card-img-top" alt="Google Pixel 4" style="height:200px; width: auto; object-fit:contain;" >
+          <div class="card-body">
+            <h5 class="card-title">Google Pixel 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary d-flex justify-content-center">BUY</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="laptop.png" class="card-img-top" alt="Asus TUF laptop" style="height:200px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Asus TUF</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary d-flex justify-content-center">BUY</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="laptop2.png" class="card-img-top" alt="Samsung Galaxy Book 4" style="height:200px; object-fit:contain;">
+          <div class="card-body">
+            <h5 class="card-title">Samsung Galaxy Book 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn btn-primary d-flex justify-content-center">BUY</a>
+          </div>
+        </div>
       </div>
     </div>
 
-
-
-    
-
-    <!-- offers -->
-
-    <div class="container-fluid mt-2">
-        <div class="row gap-2">
-          <div class="col-6">
-            <img src="img/offer-1.png" alt="" width="650px" height="300px">
-          </div>
-
-
-          <div class="col-6">
-            <img src="img/offerr-3.PNG" alt="" width="650px" height="300px">
-          </div>
+    <!-- Offers -->
+    <div class="container-fluid mt-4">
+      <!-- First row of offers -->
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <img src="img/offer-1.png" class="img-fluid" alt="Bank offer" style="height:300px; width:100%; object-fit:cover;">
         </div>
-
-        <div class="col-6">
-            <img src="mixer.png" alt="" width="650px" height="300px">
-          </div>
+        <div class="col-md-6">
+          <img src="img/offer-2.png" class="img-fluid" alt="Exchange offer" style="height:300px; width:100%; object-fit:cover;">
         </div>
-
-         <div class="col-6">
-            <img src="refrighrator.png" alt="" width="650px" height="300px">
-          </div>
+      </div>
+      <!-- Second row of offers -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="mixer.png" class="img-fluid" alt="Mixer grinder deal" style="height:300px; width:100%; object-fit:cover;">
         </div>
-
-
-        
+        <div class="col-md-6">
+          <img src="refrighrator.png" class="img-fluid" alt="Refrigerator sale" style="height:300px; width:100%; object-fit:cover;">
+        </div>
+      </div>
     </div>
 
-    <!-- footer -->
-
-
-    <div class="container ">
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-light mt-4 py-4">
       <div class="row">
-        <div class="col-3 text-light">
-           <h3 >Address</h3>
-           <hr>
-           <span>Borivali(west) <br> Mumbai-400099</span>
-        </div>
-        
-
-        <div class="col-3 text-light">
-          <h3>Links</h3>
+        <div class="col-md-3">
+          <h5>Address</h5>
           <hr>
-          <a href="index.html">Home</a> <br>
-          <a href="#">Login</a><br>
-          <a href="#">About</a><br>
-          <a href="#">Contact</a>
-         
+          <span>Borivali (West)<br>Mumbai - 400099</span>
         </div>
-
-        <div class="col-3 text-light">
-          <h3>Social</h3>
+        <div class="col-md-3 footer-links">
+          <h5>Links</h5>
           <hr>
-          <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a><br>
-          <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a><br>
-          <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a><br>
-          <a href="https://x.com/"><i class="bi bi-twitter-x"></i></a>
+          <a href="index.html" class="d-block">Home</a>
+          <a href="#" class="d-block">Login</a>
+          <a href="#" class="d-block">About</a>
+          <a href="#" class="d-block">Contact</a>
         </div>
-
-        <div class="col-3 text-light">
-          <h3>Service</h3>
+        <div class="col-md-3 footer-links">
+          <h5>Social</h5>
           <hr>
+          <a href="https://www.facebook.com/" class="d-block"><i class="bi bi-facebook me-2"></i>Facebook</a>
+          <a href="https://www.instagram.com" class="d-block"><i class="bi bi-instagram me-2"></i>Instagram</a>
+          <a href="https://www.whatsapp.com/" class="d-block"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+          <a href="https://x.com/" class="d-block"><i class="bi bi-twitter-x me-2"></i>Twitter</a>
+        </div>
+        <div class="col-md-3">
+          <h5><a href="contactus.html">contact us </a></h5>
+          <hr>
+          <p>Email: support@example.com</p>
         </div>
       </div>
     </div>
